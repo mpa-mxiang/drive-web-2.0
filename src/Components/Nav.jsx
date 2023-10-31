@@ -32,7 +32,7 @@ const Nav = () => {
                     <div className="flex gap-8 mr-16 text-[18px]">
                         <ul>
                             <Link to="App">
-                            <li>Home</li>
+                            <li className="" >Home</li>
                             </Link>
                             <Link to="About">
                                 <li>About</li>
