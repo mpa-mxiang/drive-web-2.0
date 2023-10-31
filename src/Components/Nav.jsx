@@ -1,10 +1,16 @@
 import { Link } from "react-scroll";
-import '../index.css';
+import {FaTimes} from 'react-icons/fa';
+import {BiMenu} from 'react-icons/bi';
+import { useState } from 'react';
 
 const Nav = () => {
+    const [click, setClick] = useState(false);
+    const handleClick = () => {
+        setClick(!click);
+    }
     const content = <>
         <div className="lg:hidden block absolute top-16 w-full left-0 right-0 bg-slate-900 transition">
-            <ul className="text-center text-xl p-20 flex">
+            <ul className="text-center text-xl p-15 flex flex-col">
                 <Link spy={true} smooth={true} to="App">
                     <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">Home</li>
                 </Link>
@@ -50,6 +56,13 @@ const Nav = () => {
                         </ul>
                     </div>
                 </div>
+                <div>
+                    {click && content}
+                </div>
+
+                <button className="block sm:hidden transtion" onClick={handleClick}>
+                    {click ? <FaTimes/> : <BiMenu/>}
+                </button>
             </div>
         </nav>
     )
