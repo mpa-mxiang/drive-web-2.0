@@ -60,8 +60,8 @@ const Nav = () => {
                     {click && content}
                 </div>
 
-                <button className="block sm:hidden transtion" onClick={handleClick}>
-                    {click ? <FaTimes/> : <BiMenu/>}
+                <button className="text-3xl  block sm:hidden transtion" onClick={handleClick}>
+                    {click ? <FaTimes/> : < BiMenu/>}
                 </button>
             </div>
         </nav>
