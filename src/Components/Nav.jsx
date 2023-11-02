@@ -33,7 +33,7 @@ const Nav = () => {
         <nav>
             <div className="h-10vh flex justify-between z-50 text-white lg:py-5 px-20 py-4">
                 <div className="flex items-center flex-1">
-                    <span className="text-xl font-bold">Max's Driving School</span>
+                    <span className="text-xl font-bold">Max&apos;s Driving School</span>
                 </div>
                 <div className="lg:flex md:flex lg: flex-1 items-center justify-end font-normal hidden">
                     <div className="flex gap-8 mr-6 text-[18px]">
